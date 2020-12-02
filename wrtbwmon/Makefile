@@ -16,7 +16,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/wrtbwmon
 	SECTION:=net
 	CATEGORY:=Network
-	DEPENDS:=+iptables +!BUSYBOX_CONFIG_IP:ip-full
+	DEPENDS:=+iptables +@BUSYBOX_CONFIG_IP
 	TITLE:=A Traffic Usage Monitor
 	SUBMENU:=Tools
 	PKGARCH:=all
